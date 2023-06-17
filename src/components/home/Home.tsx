@@ -17,12 +17,12 @@ export type House = {
   swornMembers: []
 }
 
-type houseAndMembers = {
+type HouseAndMembers = {
   name:string, 
-  swornMembers: swornMembers[]
+  swornMembers: SwornMembers[]
 }
 
-type swornMembers = {
+export type SwornMembers = {
   name: string, 
   deceased: string | boolean,
   mannerOfDeath: string | null,
@@ -30,7 +30,7 @@ type swornMembers = {
 }
 
 type HomeProps = {
-  houseAndMembers: houseAndMembers[]
+  houseAndMembers: HouseAndMembers[]
 };
 
 
