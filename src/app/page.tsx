@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from '@/components/home';
 import { House, SwornMembers } from '@/components/home/Home';
+import { object } from 'prop-types';
 
 
 const HomePage = async () => {
@@ -14,6 +15,14 @@ const HomePage = async () => {
     async function fetchMemberData(url: string){
       const res = await fetch(url)
       const json = await res.json()
+      // const memberSlim: SwornMembers = json.map( member => {
+      //   return {
+      //     name: member.name, 
+      //     deceased: member.died ? true : false,
+      //     mannerOfDeath: member.died ? member.died : null,
+      //     url: member.url
+      //   }
+      // })
       swornMembers.push(json)
     }
 
