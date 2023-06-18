@@ -1,7 +1,7 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Cinzel } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Cinzel({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'A Song of Ice and Fire',
@@ -15,6 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"></link>
+      </head>
+      
       <body className={inter.className}>{children}</body>
     </html>
   )
