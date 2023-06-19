@@ -32,8 +32,6 @@ type HomeProps = {
 };
 
 
-
-
 const Home = ({houseAndMembers}: HomeProps) => {
 
   return (    
