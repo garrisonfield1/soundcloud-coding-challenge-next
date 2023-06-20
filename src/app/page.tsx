@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from '@/components/home';
+import Home from '@/components/home/Index';
 import { House } from '@/components/home/Home';
 
 
