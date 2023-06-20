@@ -33,7 +33,6 @@ type HomeProps = {
   houseAndMembers: HouseAndMembers[]
 };
 
-
 const Home = ({houseAndMembers}: HomeProps) => {
 
   return (
@@ -51,7 +50,6 @@ const Home = ({houseAndMembers}: HomeProps) => {
                     : 
                     <div className="col-span-1 ..." >This house has no sworn members</div>
                   }
-                  
                 </div>
               )
             })}
