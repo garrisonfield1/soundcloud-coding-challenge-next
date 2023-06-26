@@ -1,6 +1,7 @@
-import React from 'react';
+import { Suspense } from 'react';
 import Home from '@/components/home/index';
 import { House } from '@/components/home/home';
+import Loading from "./loading"
 
 
 
@@ -16,7 +17,11 @@ const HomePage = async () => {
     }
   })
 
-  return <Home houseAndMembers={houseAndMembers} /> 
+  return (
+    <Suspense fallback={<Loading />}>
+      <Home houseAndMembers={houseAndMembers} /> 
+    </Suspense>
+  )
 };
 
 export default HomePage;  
