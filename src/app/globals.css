@@ -26,6 +26,7 @@ body {
     rgb(var(--background-start-rgb));
   font-family: 'Cinzel', serif;
 }
+
 h1{
-  font-size: xx-large;
+  font-size: x-large;
 }

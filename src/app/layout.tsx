@@ -21,7 +21,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"></link>
       </head>
       
-      <body className={inter.className}>{children}</body>
+      <body >{children}</body>
     </html>
   )
 }

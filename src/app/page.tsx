@@ -1,6 +1,7 @@
 import React from 'react';
-import Home from '@/components/home/Index';
-import { House } from '@/components/home/Home';
+import Home from '@/components/home/index';
+import { House } from '@/components/home/home';
+
 
 
 const HomePage = async () => {
@@ -15,7 +16,7 @@ const HomePage = async () => {
     }
   })
 
-  return <Home houseAndMembers={houseAndMembers} />;
+  return <Home houseAndMembers={houseAndMembers} /> 
 };
 
 export default HomePage;  
